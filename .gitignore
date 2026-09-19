@@ -1,0 +1,160 @@
+# ==========================================
+
+# 1. SEGURANÇA E VARIÁVEIS DE AMBIENTE
+
+# ==========================================
+
+# Impede o vazamento de SECRET_KEY, senhas do banco e chaves de API
+
+.env
+.env.*
+
+# Arquivos de exemplo/modelo podem ser enviados ao GitHub
+
+!.env.example
+!.env.template
+
+# Arquivos com informações sensíveis
+
+secrets.json
+*.pem
+*.key
+
+# ==========================================
+
+# 2. VISUAL STUDIO CODE
+
+# ==========================================
+
+# Configurações locais do VS Code
+
+.vscode/
+
+# Arquivos de workspace
+
+*.code-workspace
+
+# ==========================================
+
+# 3. AMBIENTE VIRTUAL (VENV)
+
+# ==========================================
+
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# ==========================================
+
+# 4. PYTHON — CACHE E ARQUIVOS TEMPORÁRIOS
+
+# ==========================================
+
+**pycache**/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Pacotes e builds
+
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ==========================================
+
+# 5. BANCO DE DADOS LOCAL
+
+# ==========================================
+
+# SQLite
+
+*.sqlite3
+*.sqlite3-journal
+db.sqlite3
+
+# ==========================================
+
+# 6. ARQUIVOS ESTÁTICOS E MÍDIA
+
+# ==========================================
+
+# Arquivos gerados pelo collectstatic
+
+/staticfiles/
+
+# Uploads locais de usuários
+
+/media/
+
+# Mantém as pastas no Git caso necessário
+
+!/media/.gitkeep
+!/static/.gitkeep
+
+# ==========================================
+
+# 7. LOGS E ARQUIVOS TEMPORÁRIOS
+
+# ==========================================
+
+*.log
+*.pot
+*.mo
+.pot
+
+# ==========================================
+
+# 8. SISTEMAS OPERACIONAIS
+
+# ==========================================
+
+# macOS
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+
+*~
+
+# ==========================================
+
+# 9. TESTES E COBERTURA
+
+# ==========================================
+
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
